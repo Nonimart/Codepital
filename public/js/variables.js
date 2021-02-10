@@ -76,7 +76,6 @@ let docteur = {
 
 
 // La pharmacie
-
 let pharmacie = {
     nom: "Pharmacie",
     argent: 80,
@@ -113,8 +112,6 @@ let cimetiere = {
     tombes: []
 
 }
-
-
 
 
 
