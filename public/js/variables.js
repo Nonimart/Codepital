@@ -2,7 +2,23 @@ import Malade from './class_malade.js'
 import Diagnostic from './class_diagnostic.js'
 import Traitement from './class_Traitement.js'
 
-//😨🤕❗❗😷❇️⬛〰️😵‍💫
+
+// Functions
+// let aboiement = () =>{
+//     return new Promise ((resolve)=>{
+//         setTimeout(()=>{
+//            resolve('Waaaaaf')
+//         },2000)
+//     })
+// }
+
+// let func = async()=>{
+//     let text = await aboiement()
+//     return text
+// }
+
+// func().then(text => console.log(text))
+
 
 // Instances de Malades
 let marcus = new Malade("🧟","Marcus", "mal indenté",100)
@@ -51,12 +67,8 @@ let docteur = {
     },
 
     diagnostiquer(patient){
-        setTimeout(function(){ 
-            console.log(`🐕 Waaaaaaf`)
-         }, 2000);
+        
         this.grilleDiagnostic.forEach(maladie =>{
-            
-    
             if(maladie.nomMaladie == patient.maladie){
                 patient.poche.push(maladie.traitement)
                 patient.etatSante = "En traitement"
@@ -101,18 +113,13 @@ let pharmacie = {
         })
 
     }
-    
 }
 
-
 // Le cimetière
-
 let cimetiere = {
     nom: "cimetiere",
     tombes: []
-
 }
-
 
 
 export {
