@@ -79,6 +79,7 @@ let docteur = {
 
 let pharmacie = {
     nom: "Pharmacie",
+    argent: 80,
     icon : "⛑️",
     visiteurs: [],
     stockMedicament : [ctrlmajf, saveOnFocusChange, CheckLinkRelation, ventoline, f12doc],

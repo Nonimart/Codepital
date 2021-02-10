@@ -21,21 +21,18 @@ console.log(`les patients : `,patients);
 
 // LA VERSION FOREACH
     patients.forEach(patient=>{
-        setTimeout(function(){ 
-            
-         
+        // setTimeout(function(){ 
 
         console.log(`#######################  ${patient.nom }   ###################################`);
         docteur.patientIn(patient)    
         docteur.diagnostiquer(patient)
         patient.payer(docteur,50)
-        
         docteur.patientOut(patient)
-        patient.goTo(pharmacie)
 
+        patient.goTo(pharmacie)
         pharmacie.recevoir(patient)
        
-    }, 2000);
+    // }, 2000);
 
 
     })
